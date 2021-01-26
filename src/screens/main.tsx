@@ -1,17 +1,21 @@
 import React from 'react';
-import {View, StyleSheet} from 'react-native'
+import {StyleSheet, View} from 'react-native';
 import {MusicSection} from '../components';
 
 export const Main = () => {
-    return (
-        <View style={styles.main}>
-            <MusicSection />
-        </View>
-    )
-}
+  return (
+    <View style={styles.main}>
+      <MusicSection />
+    </View>
+  );
+};
 
 const styles = StyleSheet.create({
-    main: {
-        flex: 1,
-    }
-})
+  main: {
+    width: '100%',
+    flex: 1,
+    justifyContent: 'flex-end',
+    alignItems: 'center',
+    backgroundColor: '#FCECCE'
+  },
+});

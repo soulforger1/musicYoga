@@ -1,11 +1,13 @@
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
-import {Main} from './screens/'
+import {Main} from './screens';
 
 const App = () => {
-  return <View style={styles.main}>
-    <Main />
-  </View>;
+  return (
+    <View style={styles.main}>
+      <Main />
+    </View>
+  );
 };
 
 const styles = StyleSheet.create({
