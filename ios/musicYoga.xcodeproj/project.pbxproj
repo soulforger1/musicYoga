@@ -161,7 +161,6 @@
 				F7B45696A853F958DAD9F960 /* Pods-musicYoga-tvOSTests.debug.xcconfig */,
 				AE73C6D696AD1A82CB3BE7F0 /* Pods-musicYoga-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
