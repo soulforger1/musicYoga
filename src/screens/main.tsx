@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, View, Text, Image } from 'react-native';
 import { MusicSection, BackSection, BackgroundSection } from '../components';
 import { Girl } from '../assets'
 import { ClientRequest } from 'http';
@@ -9,13 +9,14 @@ export const Main = () => {
     <View style={styles.container}>
       <View style={styles.textcontainer}>
         <Text style={{ color: '#E8990D', fontSize: 20, textAlign: "center" }}>#Staysafe</Text>
-        <Text style={{ color: '#132D84', fontSize: 30, textAlign: "center", marginTop: 8 }}>The Journey Begins Inside</Text>
+        <Text style={{ color: '#132D84', fontSize: 30, textAlign: "center", marginTop: 8 }}>The Journey</Text>
+        <Text style={{ color: '#132D84', fontSize: 30, textAlign: "center" }}>Begins Inside</Text>
       </View>
-      <View style={{ marginBottom: "30%" }}>
+      <View style={{ position: "absolute"}}>
         <BackgroundSection />
         <BackSection />
       </View>
-      {/* <Girl style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}/> */}
+      <Girl />
       <View style={styles.main}>
         <MusicSection />
       </View>
@@ -36,7 +37,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: '#FFE2AB',
     width: '100%',
-    flexDirection: "column"
   },
   textcontainer: {
     flex: 1,
