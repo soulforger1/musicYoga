@@ -1,6 +1,7 @@
 export * from './buildingLeft';
 export * from './buildingSecLeft';
 export * from './buildingPointy';
+export * from './buildingRight'
 export * from './cloudBottom';
 export * from './cloudLeft';
 export * from './cloudRight';
@@ -10,3 +11,5 @@ export * from './musicSection/track';
 export * from './musicSection/pause';
 export * from './musicSection/backButton';
 export * from './musicSection/nexButton';
+export * from './girl'
+export * from './shadow'
