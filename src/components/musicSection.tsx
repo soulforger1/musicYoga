@@ -38,7 +38,7 @@ export const MusicSection: React.FC<any> = () => {
         ]}>
         <AnimatedTrack isExpended={isExpended} index={index} />
         <AnimatedProgressBar isExpended={isExpended} index={index} />
-        <AnimatedControlBar isExpended={isExpended} />
+        <AnimatedControlBar isExpended={isExpended} index={index} />
       </Animated.View>
     </Pressable>
   );
