@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Animated, StyleSheet } from 'react-native';
 import { BuildingLeft, BuildingSecLeft, Point, BuildingRight } from '../assets'
 
-export const BackSection = () => {
+export const BackSection: React.FC<any> = () => {
 
     const verticalValue = new Animated.Value(0);
 
@@ -23,7 +23,7 @@ export const BackSection = () => {
     }, [])
 
     return (
-        <Animated.View style={[{ flexDirection: "row", justifyContent: "space-between" },
+        <Animated.View style={[{ flexDirection: "row", justifyContent: "space-between", marginBottom: "25%" },
         {
             transform: [{
                 translateY: translateY
@@ -38,7 +38,7 @@ export const BackSection = () => {
                     <BuildingSecLeft />
                 </Animated.View>
             </Animated.View>
-            <Animated.View style={{ flexDirection: "row", marginRight: 40 }}>
+            <Animated.View style={{ flexDirection: "row", marginRight: 40, marginLeft: '20%' }}>
                 <Animated.View >
                     <Point />
                 </Animated.View>
