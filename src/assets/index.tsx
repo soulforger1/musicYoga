@@ -11,5 +11,4 @@ export * from './musicSection/track';
 export * from './musicSection/pause';
 export * from './musicSection/backButton';
 export * from './musicSection/nexButton';
-export * from './girl'
 export * from './shadow'

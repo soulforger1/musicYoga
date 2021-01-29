@@ -1,32 +1,9 @@
-import React, {useState} from 'react';
-import {Animated, LayoutAnimation, Pressable, StyleSheet} from 'react-native';
-import {Pause} from '../assets/';
+import React from 'react';
+import {Animated, Pressable, StyleSheet} from 'react-native';
 import {AnimatedControlBar, AnimatedProgressBar, AnimatedTrack} from './';
 
-export const MusicSection: React.FC<any> = () => {
-  const [isExpended, setIsExpended] = useState(false);
-  const index = new Animated.Value(0);
+export const MusicSection: React.FC<any> = ({isExpended, expende, index}) => {
   const containerHeight = isExpended ? 485 : 66;
-
-  const expende = () => {
-    LayoutAnimation.configureNext(LayoutAnimation.create(1100));
-    setIsExpended(!isExpended);
-  };
-
-  const movingInfinity = () =>
-    Animated.timing(index, {
-      toValue: 1,
-      duration: 1100,
-      useNativeDriver: true,
-    }).start(() => {
-      Animated.timing(index, {
-        toValue: 0,
-        duration: 1100,
-        useNativeDriver: true,
-      }).start(() => movingInfinity());
-    });
-
-  if (!isExpended) movingInfinity();
 
   return (
     <Pressable onPress={expende}>
