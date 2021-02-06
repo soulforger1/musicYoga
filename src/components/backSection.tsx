@@ -7,14 +7,14 @@ export const BackSection: React.FC<any> = ({index}) => {
     inputRange: [0, 1],
     outputRange: [0, -15],
   });
-  
+
   return (
     <Animated.View
       style={[
         {
           flexDirection: 'row',
           justifyContent: 'space-between',
-          marginBottom: '25%',
+          marginBottom: '15%',
         },
         {
           transform: [

@@ -25,7 +25,7 @@ export const Girl: React.FC<any> = ({index, isExpended}) => {
         {
           zIndex: 4,
           alignItems: 'center',
-          marginTop: '90%',
+          marginTop: '110%',
         },
         {
           transform: [

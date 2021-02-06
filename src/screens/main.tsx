@@ -13,6 +13,7 @@ import {
   BackgroundSection,
   Girl,
   AnimatedBC,
+  AnimatedMic,
 } from '../components';
 
 export const Main = () => {
@@ -24,6 +25,11 @@ export const Main = () => {
     LayoutAnimation.configureNext(LayoutAnimation.create(1100));
     setIsExpended(!isExpended);
   };
+
+  const bottom = index.interpolate({
+    inputRange: [0, 1],
+    outputRange: [-30, 0],
+  });
 
   const movingInfinity = () =>
     Animated.timing(index, {
@@ -94,6 +100,21 @@ export const Main = () => {
         <View style={{position: 'absolute', width: '100%', zIndex: 7}}>
           <Girl index={index} isExpended={isExpended} />
         </View>
+      </Animated.View>
+      <Animated.View
+        style={{
+          position: 'absolute',
+          zIndex: 8,
+          transform: [
+            {translateY: bottom},
+            {scale: isExpended ? 0.8 : 1},
+            {translateY: isExpended ? -480 : 0},
+            {translateX: isExpended ? 10 : 0},
+          ],
+          bottom: -89,
+          left: 48,
+        }}>
+        <AnimatedMic index={index} />
       </Animated.View>
       <View style={styles.main}>
         <MusicSection isExpended={isExpended} expende={expende} index={index} />

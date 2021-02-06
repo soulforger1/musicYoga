@@ -6,3 +6,4 @@ export * from './VeryBackSection';
 export * from './backSection';
 export * from './girl';
 export * from './animatedBC';
+export * from './animatedMic';

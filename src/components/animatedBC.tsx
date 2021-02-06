@@ -30,7 +30,7 @@ export const AnimatedBC: React.FC<any> = ({index}) => {
       height={height * 20}
       viewBox="0 0 375 544"
       fill="none"
-      style={{marginBottom: 300}}>
+      style={{marginBottom: 250}}>
       <Path
         ref={pathRef}
         fill-rule="evenodd"
